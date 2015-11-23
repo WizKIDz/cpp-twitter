@@ -1,4 +1,4 @@
-![Alt text](twittercppheading.png "Optional title")
+![Alt text](img/twittercppheading.png "Optional title")
 
 # TwitterCpp
 
