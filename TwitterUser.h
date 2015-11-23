@@ -10,18 +10,17 @@
 #define __TwitterRESTInterface__TwitterUser__
 
 #include <stdio.h>
-#include "JSON.h"
+#include <json/json.h>
+
 #include "Tweet.h"
 
 class TwitterUser {
     
 public:
     TwitterUser(){};
-    TwitterUser(JSON user);
     std::string get_description();
     std::string get_screen_name();
     std::string set_name();
-    bool tweet(Tweet t);
 private:
     std::string t_description;
     std::string t_screen_name;

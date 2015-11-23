@@ -10,7 +10,8 @@
 #define __TwitterRESTInterface__TwitterPlace__
 
 #include <vector>
-#include "OZTwitterAPI.h"
+
+#include "Twitter.h"
 
 struct coordinate {
     double lat;

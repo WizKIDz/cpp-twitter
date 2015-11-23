@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 OzDreams. All rights reserved.
 //
 
-#include "Tweet.h"
+#include "../twittercpp/Tweet.h"
 const int max_text = 400;
 
 void Tweet::set_text(std::string text){

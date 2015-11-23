@@ -10,15 +10,15 @@
 #define __TwitterRESTInterface__Tweet__
 
 #include <stdio.h>
+#include <json/json.h>
 #include "TwitterUser.h"
 
 
 class Tweet{
     
 public:
-    Tweet():t_user(TwitterUser()){};
+    Tweet():t_id(0),t_text(""),t_retweeted(false),t_retweets(0){};
     // Constructors
-    Tweet(JSON tweet);
     // Accessors
     std::string get_text();
     // Setters
@@ -26,7 +26,6 @@ public:
 private:
     int t_id;
     std::string t_text;
-    TwitterUser t_user;
     bool t_retweeted;
     int t_retweets;
 };
