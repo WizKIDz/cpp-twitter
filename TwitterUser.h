@@ -18,6 +18,7 @@ class TwitterUser {
     
 public:
     TwitterUser(){};
+    TwitterUser(Json::Value j);
     std::string get_description();
     std::string get_screen_name();
     std::string set_name();
@@ -29,5 +30,6 @@ private:
     int t_followers;
     int t_followings;
     int t_favorites;
+    int t_id;
 };
 #endif /* defined(__TwitterRESTInterface__TwitterUser__) */

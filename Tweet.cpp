@@ -17,3 +17,12 @@ void Tweet::set_text(std::string text){
 std::string Tweet::get_text(){
     return this->t_text;
 }
+Tweet::Tweet(Json::Value j){
+	this->t_text = j["text"].asString();
+	TwitterUser user = TwitterUser(j["user"]);
+	this->t_user = user;
+}
+
+TwitterUser Tweet::getUser(){
+	return t_user;
+}

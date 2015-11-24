@@ -6,4 +6,9 @@
 //  Copyright (c) 2015 OzDreams. All rights reserved.
 //
 
-#include "../twittercpp/TwitterUser.h"
+#include "TwitterUser.h"
+TwitterUser::TwitterUser(Json::Value j){
+	this->t_id = j["id"];
+	this->t_name = j["name"];
+	this->t_description = j["description"];
+}
